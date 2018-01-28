@@ -1,4 +1,7 @@
-﻿body{
+@mixin bri{
+	margin-bottom: 15px;
+}
+body{
 	background: $BGofBody;
 	color: $TextColor;
 	#content{
@@ -19,11 +22,12 @@
 				max-width: 40%;
 				padding: 15px;
 				float: left;
-				margin: 0 15px 15px 0;
+				margin-right: 15px;
+				@include bri;
 			} @else{ 
 				color: #000;
 				padding: 15px;
-				margin-bottom: 15px;	
+				@include bri; 
 			}
 		}
 		img{
