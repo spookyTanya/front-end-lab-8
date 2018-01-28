@@ -1,0 +1,77 @@
+body {
+  background: #dcbb9a;
+  color: #000; }
+  body #content {
+    max-width: 70%;
+    margin: auto;
+    background: #fff;
+    padding: 20px; }
+    body #content h1 {
+      margin-top: 5px;
+      text-align: center; }
+    body #content h1, body #content h2 {
+      color: #893c00; }
+    body #content .brief {
+      background-color: #fadcba;
+      max-width: 40%;
+      padding: 15px;
+      float: left;
+      margin: 0 15px 15px 0; }
+    body #content img {
+      padding: 1px;
+      border: #893c00 1px solid; }
+    body #content .img-left {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+    body #content .img-right {
+      float: right;
+      margin-left: 10px;
+      margin-bottom: 10px; }
+    body #content table {
+      border: none;
+      border-spacing: 0px; }
+      body #content table th {
+        text-transform: uppercase;
+        background: #e0e0e0;
+        text-align: left;
+        font-weight: normal;
+        color: #000; }
+      body #content table th:nth-child(2) {
+        border-right: #fff 1px solid;
+        border-left: #fff 1px solid; }
+      body #content table tr {
+        background: #fff; }
+      body #content table th, body #content table td {
+        padding: 10px; }
+      body #content table td {
+        border-bottom: #e0e0e0 1px solid; }
+      body #content table caption {
+        text-align: right;
+        color: #000; }
+    body #content #responseTable table {
+      width: 90%; }
+    body #content #responseTable td {
+      border: none;
+      padding: 0;
+      text-transform: uppercase;
+      color: #808080;
+      background: #fff; }
+    body #content #responseTable input {
+      width: 98%;
+      height: 20px; }
+    body #content #responseTable textarea {
+      width: 915px;
+      height: 120px; }
+    body #content button {
+      margin-top: 10px;
+      text-transform: uppercase;
+      border-radius: 0;
+      background: 0 0;
+      border: 1px solid #3d70a1;
+      color: #3d70a1;
+      font-size: 1.4em;
+      font-weight: 300;
+      padding: 15px 50px; }
+    body #content a {
+      color: #3d70a1; }

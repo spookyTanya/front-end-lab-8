@@ -1,0 +1,109 @@
+﻿body{
+	background: $BGofBody;
+	color: $TextColor;
+	#content{
+		max-width: 70%;
+		margin: auto;
+		background: $BGofContent;
+		padding: 20px;
+		h1{
+			margin-top: 5px;
+			text-align: center;
+		}
+		h1, h2{
+			color: $ColorofHeading;
+		}
+		.brief{
+			background-color: $BGofBrief;
+			@if $BGofBrief == #fadcba{
+				max-width: 40%;
+				padding: 15px;
+				float: left;
+				margin: 0 15px 15px 0;
+			} @else{ 
+				color: #000;
+				padding: 15px;
+				margin-bottom: 15px;	
+			}
+		}
+		img{
+			padding: 1px;
+			border: $ColorofHeading 1px solid;
+		}
+		.img-left{
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.img-right{
+			float: right;
+			margin-left: 10px;
+			margin-bottom: 10px;
+		}
+		table{
+			border: none;
+			border-spacing: 0px;
+			th{
+				text-transform: uppercase;
+				background: $TableColor;
+				text-align: left;
+				font-weight: normal;
+				color: #000;
+			}
+			th:nth-child(2){
+				border-right: #fff 1px solid;
+				border-left: #fff 1px solid
+			}
+			tr{
+				background: $BGofTable;
+			}
+			th, td{
+				padding: 10px;
+			}
+			td{
+				border-bottom: $TableColor 1px solid;
+			}
+			caption{
+				text-align: right;
+				color: #000;
+			}
+
+		}
+		#responseTable{
+			table{
+				width: 90%;
+				
+			}
+			td{ 
+				border: none;
+				padding: 0;
+				text-transform: uppercase;
+				color: $FontInForm;
+				background: $FormBG;
+			}
+			input{
+				width: 98%;
+				height: 20px;
+			}
+			textarea{
+				width: 915px;
+		    	height: 120px;
+			}
+		}
+		button{
+			margin-top: 10px;
+			text-transform: uppercase;
+			border-radius: 0;
+		    background: 0 0;
+		    border: 1px solid $LinkColor;
+		    color: $LinkColor;
+		    font-size: 1.4em;
+		    font-weight: 300;
+		    padding: 15px 50px;
+		}
+		a{
+			color: $LinkColor;
+		}
+
+	}
+}
