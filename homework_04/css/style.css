@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(http://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+body header{
+	width: 100%;
+	background: url(../img/apples.jpg) no-repeat center center;
+	background-size: cover;
+	height: 740px;	
+}
+body header #navig{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+body header #navig #bnw{
+	text-transform: uppercase;
+	color: #fff;
+    margin-top: 45px;
+    letter-spacing: 3px;
+}
+body header #navig nav{
+	margin-top: 45px;
+}
+body header #navig nav a{
+	text-decoration: none;
+	color: #fff;
+	margin-left: 50px;
+}
+body header #navig nav a:hover{
+	border-bottom: 2px solid #b7c8d9;
+}
+body header h1{
+	text-align: center;
+	color: #fff;
+	margin-top: 210px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: 500;
+	position: relative;
+	margin-bottom: 0px; 
+}
+body header h1 sup{
+	font-size: 60%;
+	position: absolute;
+	top: 3px;
+}
+body header h5{
+	text-align: center;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-top: 10px;
+}
+body header #more{
+	height: 55px;
+	width: 225px;
+	display:block;
+	color: #E8E8E8;
+	text-transform: capitalize;
+	margin: 195px auto;
+	background-color: rgba(51, 53, 57, 0.9);
+	border: 2px solid #E8E8E8;
+}
+body #container{
+	display: flex;
+	flex-wrap: wrap;
+	margin:135px 13%;
+	width: 100%;
+}
+body #container #firstcol{
+	flex-basis: 30%;
+	margin-right: 8%;
+	font-size: 110%;
+}
+body #container #secondcol{
+	flex-basis: 36%;
+	font-size: 75%;
+	font-weight: 600;
+}
+body main{
+	background: #f3f3f3;
+	height: 1360px;
+	width: 100%;
+}
+body main #article{
+	text-align: center;
+	padding-top: 130px;
+	letter-spacing: 0.5px;
+	margin-bottom: 80px;
+}
+body main .row{
+	margin:30px 13% 0 13%;
+	display: flex;
+	flex-wrap: wrap; 
+	height: 300px;
+	width: 100%;	
+}
+body main .row #column1{
+	background: url(../img/sample.jpg) no-repeat center;
+	flex-basis: 48%;
+	margin-right: 2%;
+	max-width: 48%;
+	box-shadow: inset 0 -90px 150px -50px #000;
+	position: relative;
+}
+body main .row #column1 .first{
+	position: absolute;
+	height: 35px;
+	width: 65px;
+	background-color: #5f5e5e;
+	margin: 1% 0 0 88%;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+}
+body main .row .column2{
+	flex-basis: 23%;
+	max-width: 23%;
+	background: url(../img/sample2.jpg) no-repeat center;
+	box-shadow: inset 0 -90px 150px -50px #000;
+	position: relative;
+	width: 100%;
+}
+body main .row .column2 .second{
+	position: absolute;
+	height: 35px;
+	width: 65px;
+	background-color: #5f5e5e;
+	margin: 2% 0 0 75%;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+}
+body main .row #column3{
+	background: url(../img/sample3.jpg) no-repeat center;
+	box-shadow: inset 0 -90px 150px -50px #000;
+	flex-basis: 48%;
+	max-width: 48%;
+	margin-left: 2%;
+	position: relative;
+}
+body main .row .pic{
+	color: #fff;
+	margin: 255px 0 0 30px; 
+}
+body main #newsletter{
+	width: 73%;
+	background-color: #fff;
+	height: 200px;
+	margin: 90px 13% 180px 13%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+}
+body main #newsletter #subscribe{
+	width: 28%;
+	height: 60px;
+	margin: 75px 0;
+	font-size: 130%;
+	padding-left: 2.5%;
+}
+body main #newsletter #form{
+	flex-basis: 51%;
+	height: 60px;
+	margin: 75px 0;
+}
+body main #newsletter #form input{
+	height: 55px;
+	width: 65%;
+	border: 1px solid #343638;
+	padding-left: 5%;
+	font-family: 'Open Sans';
+	background-color: #f3f3f3;
+}
+body main #newsletter #form input::placeholder{
+	color: #343638;
+}
+body main #newsletter #form #sub{
+	height: 59px;
+	width: 28%;
+	background-color: #343638;
+	border: none;
+	color: #fff;
+	font-family: 'Open Sans';
+}
+body section{
+	background-color: #fff;
+	height: 295px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 13% 0 13%;
+	padding-top: 140px;
+	color: #c2c2c2;
+	font-size: 80%;
+	align-items: flex-start;
+}
+body section .heading{
+	color: #000;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 130%;
+}
+body section #fooBnW{
+	flex-basis: 13%;
+	margin-right: 6%;	
+}
+body section #contact{
+	flex-basis: 11%;
+	margin-right: 7%;
+}
+body section #contact #stupido{
+	line-height: 2;
+}
+body section #tweet{
+	flex-basis: 13%;
+	margin-right: 6%;
+}
+body section #tweet #twe{
+	font-style: italic;
+}
+body section #tweet #ago{
+	color: #e2e2e2;
+}
+body section #foonews{
+	flex-basis: 18%;
+}
+body section #foonews #smallform{
+	margin-top: 15px;
+}
+body section #foonews #smallform input{
+	width: 54%;
+	height: 45px;
+	padding-left: 5%;
+	border: 1px solid #343638;
+	font-family: 'Open Sans';
+	background-color: #f3f3f3;
+}
+body section #foonews #smallform input::placeholder{
+	color: #343638;
+}
+body section #foonews #smallform button{
+	height: 49px;
+	width: 34%;
+	background-color: #343638;
+	border: none;
+	color: #fff;
+	font-family: 'Open Sans';
+}
+body hr{
+	width: 73%;
+	color: #cccccc;
+	height: 2px;
+}
+body footer{
+	margin: 0 auto;
+	height: 75px;
+	width: 73%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+body footer #copyright{
+	margin-right: 55%;
+	color: #999999;
+}
+body footer a{
+	text-decoration: none;
+	color: #000;
+	margin-left: 20px;
+}
