@@ -1,7 +1,7 @@
 var a, b, c, mn, mx, maxlen, sq1, sq2, square, per;
-a = + prompt("Enter first length");
-b = + prompt("Enter second length");
-c = + prompt("Enter third length");
+a = Number (prompt("Enter first length"));
+b = Number (prompt("Enter second length"));
+c = Number (prompt("Enter third length"));
 if (a<(b+c)&&b<(a+c)&&c<(b+a)) {
 	per = (a + b + c) / 2;
 	square = Math.sqrt(per*(per - a)*(per - b)*(per - c));
