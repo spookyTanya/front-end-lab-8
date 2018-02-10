@@ -6,7 +6,7 @@ var attempts=0, guess, prize, total=0, again=true, time=1, pr=0;
 		console.log('You did not become a millionaire');
 	} else{
 		attempts=0;
-		while(true){
+		do{
 		var x = Math.floor(Math.random() * 5 * time);
 			switch(attempts){
 					case 0:
@@ -56,5 +56,5 @@ var attempts=0, guess, prize, total=0, again=true, time=1, pr=0;
 					pr=0;
 				}
 			}
-		}
+		}while(again==true)
 }
