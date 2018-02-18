@@ -13,5 +13,3 @@ function  getFilteredArray(array, func){
 	}
 	return finalarr;
 }
-
-getFilteredArray([7,1,6,9,4,3], predicateFunction);
