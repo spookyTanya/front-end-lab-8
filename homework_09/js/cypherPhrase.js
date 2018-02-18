@@ -11,4 +11,3 @@ function cypherPhrase(charactersMap, str) {
 }
 
 var charactersMap = {a: 'o', c: 'd', t: 'g'}
-cypherPhrase(charactersMap, 'kitty cat' );
