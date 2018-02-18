@@ -8,4 +8,3 @@ function decypherPhrase(charactersMap, str) {
 }
 
 var charactersMap = {a: 'o', c: 'd', t: 'g'}
-console.log(decypherPhrase(charactersMap, 'kiggy dog'));
