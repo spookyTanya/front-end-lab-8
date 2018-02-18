@@ -4,7 +4,3 @@ function forEach(array, func){
 		}		
 	return array;
 }
-
-forEach([1,2,3,4], function test(x) {
-	console.log(x);
-});
