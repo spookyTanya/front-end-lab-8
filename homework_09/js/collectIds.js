@@ -42,5 +42,3 @@ function collectIds(array){
 	}
 	return k;
 }
-
-collectIds(movies);
