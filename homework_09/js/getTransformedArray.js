@@ -8,5 +8,3 @@ function getTransformedArray(array, func){
 	}		
 	return finalArr;
 }
-
-getTransformedArray([1,2,3,4], times2);
