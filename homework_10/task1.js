@@ -1,19 +1,14 @@
-  //Your debounce function goes here
 function debounce(foo, delay){
-  	var time = null;
   	return function() {
   		var applied = () => foo.apply(this);
-  		clearTimeout(time);
   		time = setTimeout(applied, delay);
   	}
-
 }
 
 let iterator = 0;
 
 function increaseIteratorBy1() {
   iterator++;
-
   printIteratorValue();
 }
 
