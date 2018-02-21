@@ -22,13 +22,18 @@ function fighter(combat){
 		if(defender.Block()===true){
 			return false;
 		} else {
+			var prevHealth = defender.getStats().hp;
 			defender.getStats().hp -= this.getStats().attack;
 			var health = defender.getStats().hp;
 			if(health <= 0){
 				history.wins++;
 				defender.getCombatHistory().loses++;
+				defender.getStats().hp = prevHealth;
+				return true;
 			}
+			defender.getStats().hp = health;
 			return true;
+
 		}
 
 	};
