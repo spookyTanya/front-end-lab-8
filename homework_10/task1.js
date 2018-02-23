@@ -1,8 +1,11 @@
 function debounce(foo, delay){
+  	var time = null;
   	return function() {
   		var applied = () => foo.apply(this);
+  		clearTimeout(time);
   		time = setTimeout(applied, delay);
   	}
+
 }
 
 let iterator = 0;
