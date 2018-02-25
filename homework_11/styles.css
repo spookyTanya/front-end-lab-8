@@ -1,0 +1,14 @@
+ul:hover{
+    background-color: rgba(209, 198, 205, 0.2);
+}
+
+i{
+    color:#ffd000;
+}
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
