@@ -11,8 +11,8 @@ function start(structure, parent, clash){
 		} else { inode.innerHTML = "insert_drive_file";}
 		node.appendChild(inode);
 		if(clash===true){
-			node.className = "show";
-		} else node.className = "hide";
+			node.style.display = "block";
+		} else node.style.display = "none";
 		var textnode = document.createTextNode(structure[i].title);
 		node.appendChild(textnode);
 		if(structure[i].folder){
@@ -32,15 +32,17 @@ function clicki(event){
 	if(inode.innerHTML == "folder"){
 		inode.innerHTML = "folder_open";
 		for(var i=1; i<this.children.length; i++){
-			this.children[i].className = "show";
+			this.children[i].style.display = "block";
 		}
 	} else {
 		inode.innerHTML = "folder";
 		for(var i=1; i<this.children.length; i++){
-			this.children[i].className = "hide";
+			this.children[i].style.display = "none";
 		}
 	}
 }
 
 window.addEventListener("load", start(structure, rootNode, true));
+
+
 
