@@ -33,9 +33,6 @@ var structure = [
       }
     ]
 
-  },
-  {
-  	"title": "Iron Man.avi"
   }
 
 ];
