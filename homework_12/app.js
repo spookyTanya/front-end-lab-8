@@ -1,5 +1,5 @@
 var rootNode = document.getElementById("root");
-
+var starturl = location.href;
 function setLoc(){
 	var x = this.childNodes[2].innerHTML;
 	location.href = '#' + x;
@@ -119,27 +119,23 @@ function func(){
 			tr.appendChild(td1);
 			table.appendChild(tr);
 
-			container.appendChild(table);
-				
-	
+		container.appendChild(table);
 		var back = document.createElement("p");
 		back.innerHTML = "Back to list view";
 		back.addEventListener("click", goBack);
 		var br = document.createElement("br");
-		
 		container.appendChild(back);
-
 	}
-
 }
-
 
 function goBack() {
-    window.history.back();
+    // = document.getElementById("tanks");
+    location.href = starturl;
+	while (rootNode.firstChild) {
+    	rootNode.removeChild(rootNode.firstChild);
+	}
     start(tanks, rootNode);
 }
-
-
 
 function start(structure, root){
 	var nameofpage =  document.createElement("h1");
@@ -178,6 +174,5 @@ function start(structure, root){
 		divMain.appendChild(divnode);
 	}
 }
-
 
 window.addEventListener("load", start(tanks,rootNode));
