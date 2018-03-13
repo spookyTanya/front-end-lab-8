@@ -1,0 +1,70 @@
+body{
+	background: #1C1C1F;
+
+}
+h1{
+	color: #A19E86;
+	display: inline;
+}
+#tanks > div{
+	width: 170px;
+	height: 180px;
+	display: inline-block;	
+}
+.thumbnail-img{
+	width: 170px;
+	height: 140px;
+	margin-bottom: 20px;
+}
+.country-img{
+	position: relative;
+	bottom: 15px;
+	left: 10px;
+}
+h4{
+	margin: 0;
+	color: #cccccc;
+	
+}
+.truncate-with-css-ellipsis {
+	position: relative;
+	bottom: 15px;
+	left: 20px;
+    width: 125px;
+ 	display:inline-block;
+  	font-size: 14px;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+.country-imgSolo{
+	margin: 0 10px 0 0;
+	display: inline;
+}
+h2{
+	color: #A19E86;
+}
+.imgSolo{
+	float: left;
+}
+table{
+	width: 500px;
+	color: #cccccc;
+}
+td{
+	border: 1px solid #cccccc;
+	
+}
+.div50{
+	width: 500px;
+	float: left;
+}
+.mt{
+	margin-top: -26px;
+}
+p{
+	color: #A19E86;
+}
+.thumbnail:hover{
+	background: #333333;
+}
