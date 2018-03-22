@@ -81,14 +81,14 @@ function Employee(array){
 	let _log = '';
 	this.getWorkTimeInSeconds = function(){
 		if(this.works === true && this.startwork !==0 && this.endwork===0){
-			this.timeworking = this.startwork * 100;
+			this.timeworking = this.startwork / 1000;
 		}
 		else if(this.startwork !==0 && this.endwork !== 0){
 			this.timeworking = this.endwork - this.startwork;
-			return this.timeworking*1000;
+			return this.timeworking/1000;
 		} else if(this.works === true && this.startwork !==0 && this.endwork === 0){
 			var a = new Date();
-			this.timeworking = a.getTime()*1000 - this.startwork;
+			this.timeworking = a.getTime()/1000 - this.startwork;
 		}
 	}
 	this.getSalary = function(){
@@ -141,8 +141,8 @@ epam.addNewEmployee(anton);
 console.log(epam);
 epam.removeEmployee(2);
 console.log(epam);
-console.log(epam.getAvarageSalary()); 
-console.log(epam.getAvarageAge());
+console.log(epam.getAverageSalary()); 
+console.log(epam.getAverageAge());
 console.log(epam.getEmployees());
 console.log(epam.getFormattedListOfEmployees());
 setTimeout(console.log(vasyl.getWorkTimeInSeconds()), 1000);
