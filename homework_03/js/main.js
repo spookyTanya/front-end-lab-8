@@ -39,14 +39,14 @@ function Company(array){
 		_employers.splice(id, id-1);
 		_employers[id].works = false;
 	}
-	this.getAvarageSalary = function(){
+	this.getAverageSalary = function(){
 		var avrSal = 0;
 		for(var i=0; i<_employers.length; i++){
 			avrSal += _employers[i].salary;
 		}
 		return avrSal/_employers.length;
 	}
-	this.getAvarageAge = function(){
+	this.getAverageAge = function(){
 		var avrAge = 0;
 		for(var i=0; i<_employers.length; i++){
 			avrAge += _employers[i].age;
@@ -85,10 +85,10 @@ function Employee(array){
 		}
 		else if(this.startwork !==0 && this.endwork !== 0){
 			this.timeworking = this.endwork - this.startwork;
-			return this.timeworking*100;
+			return this.timeworking*1000;
 		} else if(this.works === true && this.startwork !==0 && this.endwork === 0){
 			var a = new Date();
-			this.timeworking = a.getTime()*100 - this.startwork;
+			this.timeworking = a.getTime()*1000 - this.startwork;
 		}
 	}
 	this.getSalary = function(){
