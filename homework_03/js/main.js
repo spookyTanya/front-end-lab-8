@@ -23,6 +23,7 @@ function Company(array){
 			_employers[x].fire();
 			var b = new Date();
 			min.endwork = b.getTime();
+			_logs += _employers[x].name + " ends working at " + this.name + " in " + b + "\n";
 			_employers[x] = obj;
 		}
 		obj.works = true;
@@ -34,10 +35,11 @@ function Company(array){
 	this.removeEmployee = function(id){
 		var b = new Date();
 		_employers[id].endwork = b.getTime();
-		_logs += _employers[id].name + " ends working at " + this.name + " in " + b;
+		_logs += _employers[id].name + " ends working at " + this.name + " in " + b + "\n";
 		_employers[id].fire();
-		_employers.splice(id, id-1);
 		_employers[id].works = false;
+		_employers.splice(id, 1);
+		
 	}
 	this.getAverageSalary = function(){
 		var avrSal = 0;
@@ -80,16 +82,17 @@ function Employee(array){
 	this.timeworking = 0;
 	let _log = '';
 	this.getWorkTimeInSeconds = function(){
-		if(this.works === true && this.startwork !==0 && this.endwork===0){
-			this.timeworking = this.startwork / 1000;
-		}
-		else if(this.startwork !==0 && this.endwork !== 0){
+		if(this.works === true && this.startwork !==0 && this.endwork === 0){
+			var a = new Date();
+			return this.timeworking = (a.getTime() - this.startwork) / 1000;
+
+		}else if(this.startwork !==0 && this.endwork !== 0){
 			this.timeworking = this.endwork - this.startwork;
 			return this.timeworking/1000;
-		} else if(this.works === true && this.startwork !==0 && this.endwork === 0){
-			var a = new Date();
-			this.timeworking = a.getTime()/1000 - this.startwork;
+		} else if(this.works === true && this.startwork !==0 && this.endwork===0){
+			return this.timeworking = this.startwork / 1000;
 		}
+
 	}
 	this.getSalary = function(){
 		return this.salary;
@@ -139,7 +142,7 @@ epam.addNewEmployee(ivan);
 epam.addNewEmployee(orest);
 epam.addNewEmployee(anton);
 console.log(epam);
-epam.removeEmployee(2);
+epam.removeEmployee(1);
 console.log(epam);
 console.log(epam.getAverageSalary()); 
 console.log(epam.getAverageAge());
@@ -149,4 +152,8 @@ setTimeout(console.log(vasyl.getWorkTimeInSeconds()), 1000);
 console.log(vasyl.getWorkTimeInSeconds());
 console.log(epam.getHistory());
 console.log(orest.getHistory());
+setTimeout(() => {
+   epam.removeEmployee(1);
+   console.log(artem.getWorkTimeInSeconds()); // -> 5.5744444444444445
+}, 5000);
 epam.addNewEmployee(5,6,9,5); 
