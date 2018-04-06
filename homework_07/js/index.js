@@ -4,12 +4,12 @@ var cell = $('.cell');
 
 let black = {
    value: 'X',
-   image: "images/black.jpg",
+   image: "img/black.png",
 };
 
 let white = {
    value:'O',
-   image: "images/white.jpg",
+   image: "img/white.jpg",
 };
 
 const Os = "OOOO";
