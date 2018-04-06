@@ -1,0 +1,29 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div id="container">
+  <div id='game'>
+    <div id="screen">Black's turn</div>
+    <div id="wrapper">
+    	
+    </div>
+    <div id="outer">
+    	
+    </div>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+  for(var j=0;j<256;j++){
+  	$("#outer").append("<div class='OuterCell'></div>");
+  }
+
+  for(var i=0; i<225;i++){
+    $("#wrapper").append("<div class='cell'></div>");
+  }
+</script>
+<script src="game.js" type="text/javascript" charset="utf-8" defer></script>
+</body>
+</html>
