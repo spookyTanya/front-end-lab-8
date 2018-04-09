@@ -1,17 +1,6 @@
-// var rockstars = require('../routers');
 const fs = require("fs");
 var test = fs.readFileSync('data/storage.json');
 var stars = JSON.parse(test);
-
-// exports.get = function(req, res){
-// 	rockstars.get(function (err, doc){
-// 		if(err){
-// 			console.log(err);
-// 			return res.status(400).send("nope");
-// 			} 
-// 		res.send(doc);	
-// 	})
-// }
 
 exports.get = function(req, res){
 	res.status(200).send(stars);
@@ -43,8 +32,6 @@ exports.post = (req, res) => {
 	stars.push(rock);
 	res.sendStatus(201).send(rock);
 }
-
-
 
 exports.put = (req, res) => {
 	const rock = stars.find(c => c.id===parseInt(req.params.id));
