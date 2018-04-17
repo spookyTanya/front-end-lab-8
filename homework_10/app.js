@@ -2,7 +2,6 @@ class Input {
     constructor(placeHolder) {
         this.placeHolder = placeHolder || "Type...";
         this._value = "";
-       // this.valid = false;
     }
 
     get value() {
@@ -11,9 +10,6 @@ class Input {
 
     setValue(newValue) {
         this._value = newValue;
-        // this.valid = AddRequiredValidation(this._value) && 
-        // AddMaxLengthValidation(this._value, 10) && 
-        // AddNumberValidation(this._value);
     }
 }
 
