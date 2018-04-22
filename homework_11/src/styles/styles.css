@@ -1,0 +1,45 @@
+#root{
+	width: 35%;
+	margin: 50px auto;
+	padding: 20px;
+	box-shadow: inset 0 0 10px .1px #222;
+	
+}
+
+.inputs{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	margin-bottom: 10px
+}
+.input{
+	padding: 5px;
+	margin: 10px;
+}
+
+.buttons{
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+button{
+	width: 10%;
+	margin: 10px;
+	font-size: 18px;
+	transition: .3s;
+}
+
+button:hover{
+	background-color: #fff;
+	box-shadow: 0 0 5px 1px #666; 
+}
+
+body{
+	overflow: hidden;
+}
+
+.output{
+	padding: 5px;
+	margin: 10px 30%;
+}
