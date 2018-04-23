@@ -178,13 +178,17 @@ const sorting = {
     init: function(){
         $('.sort-controls').empty();
         var divname = document.createElement('div');
-        divname.innerHTML = 'Name';
+        divname.innerHTML = 'Name'; 
         $('.sort-controls').append(divname);
         divname.className = "sortList";
 
+        var sort = document.createElement('div');
+        divname.append(sort);
+        sort.className = 'sort';
+
         var sortup = document.createElement('span');
         sortup.innerHTML = "&#x25b2;";
-        divname.append(sortup);
+        sort.append(sortup);
         sortup.addEventListener('click', ()=>{
             sorting.sortByNameAsc();       
             $('span').removeClass('active');
@@ -192,20 +196,24 @@ const sorting = {
 
         var sortdown = document.createElement('span');
         sortdown.innerHTML = "&#x25bc;";
-        divname.append(sortdown);
+        sort.append(sortdown);
         sortdown.addEventListener('click', ()=>{
             sorting.sortByNameDesc();   
             $('span').removeClass('active');
             sortdown.className = 'active';});
 
         var divname2 = document.createElement('div');
-        divname2.innerHTML = 'Score';
+        divname2.innerHTML = 'Score'; 
         $('.sort-controls').append(divname2);
         divname2.className = "sortScore";
 
+        var sort2 = document.createElement('div');
+        divname2.append(sort2);
+        sort2.className = 'sort';
+        
         var sortup2 = document.createElement('span');
         sortup2.innerHTML = "&#x25b2;";
-        divname2.append(sortup2);
+        sort2.append(sortup2);
         sortup2.addEventListener('click', ()=>{
             sorting.sortByScoreAsc();        
             $('span').removeClass('active');
@@ -213,7 +221,7 @@ const sorting = {
 
         var sortdown2 = document.createElement('span');
         sortdown2.innerHTML = "&#x25bc;";
-        divname2.append(sortdown2);
+        sort2.append(sortdown2);
         sortdown2.addEventListener('click', ()=>{
             sorting.sortByScoreDesc();
             $('span').removeClass('active');
@@ -267,3 +275,4 @@ const sorting = {
 }
 
 control.init();
+
