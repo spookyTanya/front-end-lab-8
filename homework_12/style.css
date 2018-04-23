@@ -10,6 +10,17 @@ body {
 .wrapper {
     overflow: hidden;
 }
+/**************/
+/*Sort Controls*/
+
+.sort{
+    float: right;
+    height: 30px;   
+}
+.sort span{
+    display: block;
+    cursor: default;
+}
 
 
 /**************/
@@ -52,6 +63,7 @@ body {
 }
 .scores span {
     pointer-events: none;
+
 }
 .score-input {
     width: 35px;
@@ -85,7 +97,7 @@ body {
 .sort-controls > div{
     display: inline-block;
     border: solid 1px  #ccc;
-    padding: 10px;
+    padding: 5px 10px; 
 }
 
 .sortList{
