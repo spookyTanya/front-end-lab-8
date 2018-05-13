@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="list">
+  <head>
+    <script src="lib/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="src/data.js"></script>
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="MyController">
+      <div class="categories">
+          Categories
+          <ul>
+            <li ng-click="showAll()"><a href="#">All</a></li>
+            <li ng-repeat='link in unique' ng-click="testF(link)"><a href="#">{{link}}</a></li>
+          </ul>
+          <input ng-model="filt.title">
+      </div>
+      <div ng-repeat='elem in data | filter:filt'>
+          <div class="element {{elem.categories}}" ng-show="showElement">
+            <div class="image" style='background-image: url({{elem.photo}})'>
+              <p class="title">{{elem.title}}</p>
+            </div>
+            <a href="#">{{elem.categories}}</a>
+            <p>{{elem.description}}</p>
+            <button ng-click="">Edit</button>
+            <button ng-click="" class="save">Save</button>
+          </div>
+      </div>
+      <div class="element">
+        <form novalidate>
+          <label>Title: <input type="text" ng-model="post.title" /></label><br>
+          <label>Categories: <input type="text" ng-model="post.categories" /></label><br>
+          <label>Description: <textarea rows="5" cols="50" ng-model="post.description"></textarea> </label><br>
+          <label>Photo: <input type="text" ng-model="post.photo" /></label><br>
+          <button ng-click="update(post)">Save</button>
+        </form>
+      </div>
+    </div>
+
+
+  </body>
+</html>

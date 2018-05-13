@@ -1,0 +1,41 @@
+.element{
+	width: 60%;
+	margin: 10px auto;
+	height: auto;
+	border: 1px solid black;
+	background-color: #ccc; 
+	padding: 5px;
+}
+
+.image{
+	background-repeat: no-repeat;
+	background-color: white;
+	height: 70px;
+	border: 1px solid tomato;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title{
+	top: 55%;
+	height: 25%;
+	position: relative;
+	background-color: rgba(230, 230, 230, 0.4);
+}
+
+a{
+	display: flex;
+	text-decoration: none;
+}
+
+.categories{
+	border: 1px solid #ccc;
+	float: right;
+	width: 15%;
+	height: auto;
+	padding: 5px;
+} 
+
+/*.save{
+	display: none;
+}*/
